@@ -1,22 +1,55 @@
 .footer {
-   border: solid black 1px;
    width: 100vw;
-   position: relative;
-}
-
-.link-lists-top {
-   width: inherit;
    display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   bottom: 0;
+   background-color: #F5F7EF;
 }
-
-ul {
-   flex-grow: 1;
+/*----------------------TOP DIV-----------------------------------------------*/
+.link-lists-top {
+   width: 60vw;
+   display: flex;
+   justify-content: space-around;
+   padding: 4em;
+   border-bottom: solid 1px #dcdcd9;
+   font-weight: lighter;
 }
 
 li {
    list-style-type: none;
 }
 
+/*---------------------BOTTOM DIV---------------------------------------------*/
 .meta-bottom {
-   width: inherit;
+   width: 60vw;
+   display: flex;
+   padding: 2em;
+}
+
+#logo-and-slogan {
+   width: 40%;
+   display: flex;
+   justify-content: space-around;
+}
+
+/*replace with actual logo*/
+#logo {
+   color: #f56400;
+   font-size: 200%;
+}
+
+#slogan {
+   padding-top: 1em;
+}
+
+/*this will be reassigned to an actual button if we decide to add one*/
+#help-button {
+   background-color: white;
+   border: solid 1px #dcdcd9;
+   border-radius: 3px;
+   padding: .25em 1.5em;
+   /*font size may change when we import the right fonts*/
+   font-size: 90%;
 }
