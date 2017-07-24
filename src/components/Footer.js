@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Footer.css'
+// import logo from '../etsy.svg'
 
 export default class Footer extends Component {
   render() {
@@ -36,7 +37,10 @@ export default class Footer extends Component {
          </div>
          <hr></hr>
          <div className="meta-bottom">
-            <div id="logo"></div>
+            <div id="logo-and-slogan">
+               <div id="logo">FILLER</div>
+               <div id="slogan">We make it easy to find your thing.</div>
+            </div>
             <div id="copyright"><light>© 2017 Etsy, Inc.</light></div>
             <div> Terms of Use </div>
             <div>Privacy</div>

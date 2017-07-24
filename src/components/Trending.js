@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import 'styles > make css if we need sep css file'
+import '../styles/Trending.css'
 
 // import child components
 import Footer from './Footer.js'
