@@ -41,7 +41,7 @@ export default class Footer extends Component {
                <div id="logo">FILLER</div>
                <div id="slogan">We make it easy to find your thing.</div>
             </div>
-            <div id="copyright"><light>© 2017 Etsy, Inc.</light></div>
+            <div id="copyright">© 2017 Etsy, Inc.</div>
             <div> Terms of Use </div>
             <div>Privacy</div>
             <div id="help-button">Help</div>
