@@ -1,0 +1,17 @@
+.footer {
+   border: solid black 1px;
+   width: 100vw;
+}
+
+.link-lists-top {
+   display: flex;
+   width: inherit;
+}
+
+ul {
+   flex-grow: 1;
+}
+
+li {
+   list-style-type: none;
+}
