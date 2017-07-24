@@ -1,11 +1,12 @@
 .footer {
    border: solid black 1px;
    width: 100vw;
+   position: relative;
 }
 
 .link-lists-top {
-   display: flex;
    width: inherit;
+   display: flex;
 }
 
 ul {
@@ -14,4 +15,8 @@ ul {
 
 li {
    list-style-type: none;
+}
+
+.meta-bottom {
+   width: inherit;
 }
