@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/Trending.css'
+import '../styles/font-awesome-4.7.0/css/font-awesome.css'
 
 // import child components
 import Footer from './Footer.js'
