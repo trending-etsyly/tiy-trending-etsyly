@@ -29,10 +29,10 @@ export default class Footer extends Component {
             </ul>
             <ul className="follow">
                <li><h4>Follow Etsy</h4></li>
-               <li><a href="https://www.facebook.com/Etsy"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a></li>
-               <li><a href="https://www.instagram.com/etsy"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
-               <li><a href="https://www.pinterest.com/etsy"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a></li>
-               <li><a href="https://www.twitter.com/etsy"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+               <li><a href="https://www.facebook.com/Etsy"><i className="fa fa-facebook-official fa-lg" /> Facebook</a></li>
+               <li><a href="https://www.instagram.com/etsy"><i className="fa fa-instagram fa-lg" /> Instagram</a></li>
+               <li><a href="https://www.pinterest.com/etsy"><i className="fa fa-pinterest-p fa-lg" /> Pinterest</a></li>
+               <li><a href="https://www.twitter.com/etsy"><i className="fa fa-twitter fa-lg" /> Twitter</a></li>
             </ul>
          </div>
          <hr></hr>

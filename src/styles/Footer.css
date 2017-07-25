@@ -15,9 +15,22 @@
    min-width: 1000px;
    width: 60vw;
    display: flex;
-   justify-content: center;
+   justify-content: space-around;
    padding: 4em;
    border-bottom: solid 1px #dcdcd9;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+i {
+  padding: .5em;
 }
 
 ul {
@@ -27,7 +40,7 @@ ul {
 
 li {
    list-style-type: none;
-   line-height: 2;
+   line-height: 2em;
 }
 
 /*---------------------BOTTOM DIV-*/
