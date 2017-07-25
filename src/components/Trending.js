@@ -10,11 +10,15 @@ export default class Trending extends Component {
   render() {
     return (
       <div className="TrendingPage">
-      <div className="Banner"></div>
+      <div className="Banner">
+      <h2> Shop unique and handmade items directly from creative people around the world </h2>
+      </div>
+      <br></br>
       <h1><b> Popular items trending now</b></h1>
       <br></br>
       <ItemCard />
       <Footer />
+
       </div>
     );
   }
