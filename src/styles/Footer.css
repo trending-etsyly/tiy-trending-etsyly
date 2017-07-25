@@ -1,37 +1,50 @@
 .footer {
+   min-width: 1000px;
    width: 100vw;
    display: flex;
    flex-direction: column;
    align-items: center;
    position: absolute;
    bottom: 0;
-   background-color: #F5F7EF;
+   background-color: #EFEFEB;
+   font-size: 85%;
+   font-family: 'Lato', sans-serif;
 }
-/*----------------------TOP DIV-----------------------------------------------*/
+/*----------------------TOP DIV-*/
 .link-lists-top {
+   min-width: 1000px;
    width: 60vw;
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    padding: 4em;
    border-bottom: solid 1px #dcdcd9;
-   font-weight: lighter;
+}
+
+ul {
+   margin-left: 3em;
+   margin-right: 3em;
 }
 
 li {
    list-style-type: none;
+   line-height: 2;
 }
 
-/*---------------------BOTTOM DIV---------------------------------------------*/
+/*---------------------BOTTOM DIV-*/
 .meta-bottom {
+   min-width: 1000px;
    width: 60vw;
    display: flex;
-   padding: 2em;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1.5em;
 }
 
 #logo-and-slogan {
    width: 40%;
    display: flex;
    justify-content: space-around;
+   align-items: center;
 }
 
 /*replace with actual logo*/
@@ -40,16 +53,13 @@ li {
    font-size: 200%;
 }
 
-#slogan {
-   padding-top: 1em;
-}
 
 /*this will be reassigned to an actual button if we decide to add one*/
 #help-button {
    background-color: white;
    border: solid 1px #dcdcd9;
    border-radius: 3px;
-   padding: .25em 1.5em;
+   padding: .25em 2em;
    /*font size may change when we import the right fonts*/
    font-size: 90%;
 }

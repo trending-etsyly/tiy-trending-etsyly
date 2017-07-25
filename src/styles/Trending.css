@@ -1,5 +1,5 @@
 .TrendingPage {
-   /*border: solid black 1px;*/
+   min-width: 1000px;
    width: 100vw;
    min-height: 100vh;
 }
