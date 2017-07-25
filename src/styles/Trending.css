@@ -5,25 +5,27 @@
 }
 
 .Banner {
-  background-image: url("pigs2.jpg");
+  background-image: url("tryme.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: inline-block;
   width: 100vw;
-  height: 25%;
+  height: 10%;
 }
 
 h2 {
- font-size: 2.3em;
- padding: 2%;
+ font-size: 1.7em;
  color: white;
- width: 35%;
+ width: 45%;
  display: right;
- font-family: "Baskerville Old Face";
+ font-family: "Bitter";
+ margin-left: 15%;
 }
 
 h1 {
-  font-family: "Helvetica";
-
+  font-family: "Bitter";
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 5%;
 }
