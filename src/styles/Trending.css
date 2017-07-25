@@ -1,0 +1,31 @@
+.TrendingPage {
+  min-width: 1000px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.Banner {
+  background-image: url("tryme.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  width: 100vw;
+  height: 10%;
+}
+
+h2 {
+ font-size: 1.7em;
+ color: white;
+ width: 45%;
+ display: right;
+ font-family: "Bitter";
+ margin-left: 15%;
+}
+
+h1 {
+  font-family: "Bitter";
+  display: inline-block;
+  font-size: 1.5em;
+  margin-left: 5%;
+}
