@@ -38,7 +38,7 @@ export default class Footer extends Component {
          <hr></hr>
          <div className="meta-bottom">
             <div id="logo-and-slogan">
-               <div id="logo">FILLER</div>
+               <div id="logo"></div>
                <div id="slogan">We make it easy to find your thing.</div>
             </div>
             <div id="copyright">© 2017 Etsy, Inc.</div>

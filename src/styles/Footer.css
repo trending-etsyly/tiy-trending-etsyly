@@ -56,14 +56,18 @@ li {
 #logo-and-slogan {
    width: 40%;
    display: flex;
-   justify-content: space-around;
+   justify-content: center;
    align-items: center;
 }
 
 /*replace with actual logo*/
 #logo {
    color: #f56400;
-   font-size: 200%;
+   /*font-size: 200%;*/
+   width: 5em;
+   height: 3em;
+   background: url('../assets/etsy.svg') center/cover;
+   padding: .5em;
 }
 
 
