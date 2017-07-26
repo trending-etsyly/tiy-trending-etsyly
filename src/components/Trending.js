@@ -44,11 +44,13 @@ export default class Trending extends Component {
   render() {
     return (
       <div className="TrendingPage">
-      <div className="Banner"> place image and shop handmade quote here</div>
-      <h1><b> Popular items trending now</b></h1>
-      <br></br>
-      {this.state.products}
-      <Footer />
+         <div className="Banner">
+            <h2> Shop unique and handmade items directly from creative people around the world </h2>
+         </div>
+         <h1><b> Popular items trending now</b></h1>
+         <br></br>
+         {this.state.products}
+         <Footer />
       </div>
     );
   }
