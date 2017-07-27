@@ -6,12 +6,10 @@ TIY Group Members/ Team Leader Schedule:
 Brad 7/24
 Zoe 7/25
 Brittany 7/26
-Dylan 7/27
-Chad 7/28
+Chad 7/27
+Dylan 7/28
 
 Current Progress:
 
-Footer is complete
-ItemCard has a basic structure
+Currently working on ItemCard styling
 Currently working on API/fetch
-Currently working on banner image
