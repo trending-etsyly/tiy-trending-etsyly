@@ -53,7 +53,8 @@ export default class Trending extends Component {
          </div>
          <h1><b> Popular items trending now</b></h1>
          <br></br>
-         {this.state.products}
+         <div className="productsDiv"> {this.state.products}</div>
+
          <Footer />
       </div>
     );

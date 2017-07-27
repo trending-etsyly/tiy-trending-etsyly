@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import '../styles/ItemCard.css'
+import '../styles/ItemCard.css'
 
 // const apiKey = "wta5sg99vllp9dr1b3xw5qc3";
 
@@ -23,11 +23,12 @@ export default class ItemCard extends Component {
   // }
 
   render() {
-    let imgUrl = `"background-image: url(${this.props.mainImage})"`;
-    console.log('ImageURL:', imgUrl);
+    // console.log('ImageURL:', imgUrl);
     return (
       <div className="ItemCard">
-        <div className="cardImage" style={this.imgUrl}></div>
+        <div className="stuffff">
+          <img className="cardImage" src={this.props.mainImage}></img>
+        </div>
         <div className="titlePriceRow">
           <div className="cardTitle">{this.props.title}</div>
           <div className="cardPrice">{this.props.price}</div>
@@ -36,3 +37,4 @@ export default class ItemCard extends Component {
     );
   }
 }
+// `background-image: url(${this.props.mainImage})`;
