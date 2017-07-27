@@ -18,7 +18,7 @@ export default class Trending extends Component {
          products: [],
       }
    }
-i
+
    componentDidMount() {
       fetch(`https://openapi.etsy.com/v2/listings/trending?includes=MainImage(url_570xN),User(login_name)&fields=listing_id,user_id,title,price,url&limit=${this.state.limit}&page=${this.state.page}&api_key=${apiKey}`)
       .then(results => {
@@ -27,10 +27,12 @@ i
       .then(data => {
         console.log('data', data);
          let productList = data.results.map((product) => {
+           console.log('mapping');
             return (
-            <ItemCard key={product.listing_id} listingId={product.listing_id} userId={product.user_id} loginName={product.User.login_name} title={product.title} mainImage={product.mainImage.url_570xN} price={product.price} address={product.url}/>
-          )
-         })
+              <ItemCard key={product.listing_id} listingId={product.listing_id} userId={product.user_id} loginName={product.User.login_name} title={product.title} price={product.price} address={product.url} mainImage={product.MainImage.url_570xN} />
+            )
+        });
+        console.log('productList', productList);
             this.setState({
                products: productList,
                count: data.count

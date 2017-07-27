@@ -27,7 +27,6 @@ export default class ItemCard extends Component {
     console.log('ImageURL:', imgUrl);
     return (
       <div className="ItemCard">
-        // <div className="cardImage"><img src={this.state.mainImage} alt="product_image" /></div>
         <div className="cardImage" style={this.imgUrl}></div>
         <div className="titlePriceRow">
           <div className="cardTitle">{this.props.title}</div>
