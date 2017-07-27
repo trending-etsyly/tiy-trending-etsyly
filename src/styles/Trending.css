@@ -2,7 +2,6 @@
   min-width: 1000px;
   width: 100vw;
   min-height: 100vh;
-  background: #EFEFEB;
 }
 
 .Banner {
@@ -32,13 +31,6 @@ h1 {
   margin-left: 10vw;
 }
 
-.productsDiv {
-  padding: 0 125px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px 10px;
-  justify-items: center;
-}
 
 
 
