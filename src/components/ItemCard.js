@@ -31,7 +31,10 @@ export default class ItemCard extends Component {
         </div>
         <div className="titlePriceRow">
           <div className="cardTitle">{this.props.title}</div>
-          <div className="cardPrice">{this.props.price}</div>
+            <div class="cardSellerPrice">
+              <div class="seller">{this.props.loginName}</div>
+              <div class="price">{this.props.price}</div>
+            </div>
         </div>
       </div>
     );
