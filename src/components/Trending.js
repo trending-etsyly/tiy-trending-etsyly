@@ -40,7 +40,7 @@ export default class Trending extends Component {
             console.log("state", this.state.products);
           })
       .catch((error) => {
-          // console.log("Error with Fetching : ", error);
+          console.log("Error with Fetching : ", error);
        });
    }
 
