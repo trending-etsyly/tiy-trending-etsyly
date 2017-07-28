@@ -51,7 +51,6 @@ export default class Trending extends Component {
 
    updatePage = (event) => {
      event.preventDefault()
-     console.log('new page:', event.target.value);
      this.setState({
        page: event.target.value
      });
@@ -60,7 +59,6 @@ export default class Trending extends Component {
 
    updateLimit = (event) => {
      event.preventDefault();
-     console.log('update limit to:', event.target.value);
      this.setState({
        page: "1",
        limit: event.target.value
@@ -69,9 +67,7 @@ export default class Trending extends Component {
    }
 
    pagesComponent = () => {
-    //  console.log('pagesComponent');
     let numPages = Math.ceil(this.state.count/this.state.limit), pageButtons = []
-    console.log(numPages);
 
     for (let n = 1; n <= numPages; n++) {
       pageButtons.push(<button className="linkButton" key={n} onClick={this.updatePage} value={n}>{n}</button>)

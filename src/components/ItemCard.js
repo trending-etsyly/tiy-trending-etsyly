@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import '../styles/ItemCard.css'
 
 export default class ItemCard extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
 
   render() {
     return (
