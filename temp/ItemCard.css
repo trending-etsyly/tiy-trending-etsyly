@@ -23,34 +23,22 @@
     border-right: .5px solid #DFDEDE;
   }
 
-  /*.ItemCard :hover {
-    box-shadow: 1px #BBBBBB;
-  }*/
-
   .titlePriceRow {
-    width: 228.5px;
-    height: 42px;
+    width: 217.5px;
+    height: 47px;
     overflow: hidden;
-  }
-
-  .ItemCard :hover > .titlePriceRow {
-    box-shadow: .5px .5px .5px 0px #DBDBDB;
-    text-decoration: none;
+    margin: auto;
   }
 
   .cardTitle {
-    width: 217.5px;
-    overflow: hidden;
+    width: 5000px;
     height: 14px;
     font-size: 13px;
     text-decoration: none;
     justify-content: space-between;
-    text-align: center;
-    margin-top: 5px;
+    margin-top: 7px;
     margin-bottom: 4px;
-    margin-left: 7px;
     white-space: nowrap;
-    text-decoration: none;
   }
 
   .cardSellerPrice {
@@ -58,21 +46,17 @@
     height: 16px;
     display: flex;
     justify-content: space-between;
-    margin-left: 7px;
     margin-bottom: 5px;
-    text-decoration: none;
   }
 
   .seller {
     float: left;
     font-size: 13px;
     color: #777;
-    text-decoration: none;
   }
 
   .price {
     float: right;
     font-size: 13px;
     font-weight: bold;
-    text-decoration: none;
   }

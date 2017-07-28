@@ -18,7 +18,7 @@ export default class Trending extends Component {
 
       this.state = {
          page: "1",
-         limit: "24",
+         limit: "10",
          count: "0",
          products: [],
       }
