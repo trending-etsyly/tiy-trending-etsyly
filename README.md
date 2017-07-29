@@ -3,13 +3,12 @@ Create a clone of the Etsy Trending page and footer.  To be combined with the re
 
 TIY Group Members/ Team Leader Schedule:
 
-Brad 7/24
-Zoe 7/25
-Brittany 7/26
-Chad 7/27
-Dylan 7/28
+- Brad 7/24
+- Zoe 7/25
+- Brittany 7/26
+- Chad 7/27
+- Dylan 7/28
 
 Current Progress:
-
-Currently working on ItemCard styling
-Currently working on API/fetch
+- MVP reached
+- Minor fixes as necessary

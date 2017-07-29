@@ -10,10 +10,7 @@
   height: 180px;
   position: relative;
   display: inline-block;
-  background-image: url('../assets/banner.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url('../assets/banner.jpg') center/cover no-repeat;
 }
 
 h2 {
@@ -39,22 +36,65 @@ h1 {
   margin: 0 auto;
 }
 
+.pageSelector {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin: 0;
+  padding-bottom: 15px;
+}
 
+.limitHeader {
+  padding: 5px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: grey;
+  opacity: .5;
+}
 
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: inherit;
+  min-width: inherit;
+}
 
+.linkButton {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: grey;
+  font-size: 14.4px;
+  font-weight: bold;
+}
 
+.activePage {
+  color: #354E67;
+}
 
+.linkButton:hover {
+  color: black;
+  cursor: pointer;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-/**/
+.pageNavArrows {
+  display: inline-block;
+  text-align: center;
+  width: 29px;
+  height: 29px;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 8px;
+  border: none;
+  border-radius: 150px;
+  outline: none;
+  color: white;
+  background-color: #f56400;
+}
+.pageNavArrows:hover {
+  cursor: pointer;
+}

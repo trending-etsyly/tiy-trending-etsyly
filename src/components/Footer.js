@@ -35,7 +35,14 @@ export default class Footer extends Component {
                <li><a href="https://www.twitter.com/etsy"><i className="fa fa-twitter fa-lg" /> Twitter</a></li>
             </ul>
          </div>
-         <hr></hr>
+         <div className= "currencyInfo">
+           <div className= "currencyContainer">
+             <div className="flagIcon"></div>
+             <div className="unitedStates">United States</div>
+             <div className= "currencyDetails">English (US)</div>
+             <div className= "currencyDetails">$ (USD)</div>
+          </div>
+         </div>
          <div className="meta-bottom">
             <div id="logo-and-slogan">
                <div id="logo"></div>
