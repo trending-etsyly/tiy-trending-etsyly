@@ -75,6 +75,10 @@ h1 {
   font-weight: bold;
 }
 
+.activePage {
+  color: #354E67;
+}
+
 .linkButton:hover {
   color: black;
   cursor: pointer;

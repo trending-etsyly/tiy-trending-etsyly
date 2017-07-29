@@ -19,9 +19,10 @@ export default class Trending extends Component {
       this.pageNavBack = this.pageNavBack.bind(this);
 
       this.state = {
-         page: "1",
-         limit: "24",
-         count: "0",
+         page: 1,
+         maxPages: 17,
+         limit: 24,
+         count: 0,
          products: [],
       }
    }
@@ -40,7 +41,7 @@ export default class Trending extends Component {
          }
          else {
            return (
-             <ItemCard key={product.listing_id} listingId={product.listing_id} userId={product.user_id}  title={product.title} price={product.price} address={product.url}  />
+             <ItemCard key={product.listing_id} listingId={product.listing_id} userId={product.user_id}  title={product.title} price={product.price} address={product.url} loginName={product.Shop.shop_name}  />
            )
          }
 
@@ -62,35 +63,37 @@ export default class Trending extends Component {
    updatePage = (event) => {
      event.preventDefault()
      this.setState({
-       page: event.target.value
+       page: Number(event.target.value)
      });
      return this.fetchItems();
    }
 // ------------------------------------
    pageNavForward = (event) => {
      event.preventDefault()
-     var pgToNum = Number(this.state.page) + 1;
-     var newPg = String(pgToNum);
-     this.setState({
-       page: newPg,
-     });
-     return this.fetchItems();
+     if (this.state.page < this.state.maxPages) {
+       var pgToNum = this.state.page + 1;
+       this.setState({
+         page: pgToNum,
+       });
+       return this.fetchItems();
+     }
    }
 
    pageNavBack = (event) => {
      event.preventDefault()
-     var pgToNum = Number(this.state.page) - 1;
-     var newPg = String(pgToNum);
-     this.setState({
-       page: newPg,
-     });
-     return this.fetchItems();
+     if (this.state.page > 1) {
+       var pgToNum = this.state.page - 1;
+       this.setState({
+         page: pgToNum,
+       });
+       return this.fetchItems();
+     }
    }
 
    pageNavArrows = () => {
       return (
          <div className="pageForwardBackward">
-         <button className="pageNavArrows" key="-1" onClick={this.pageNavForward} value="<"> ◀︎ </button>
+         <button className="pageNavArrows" key="-1" onClick={this.pageNavBack} value="<"> ◀︎ </button>
          <button className="pageNavArrows" key="+1" onClick={this.pageNavForward} value=">"> ▶︎ </button>
          </div>
       )
@@ -101,8 +104,9 @@ export default class Trending extends Component {
    updateLimit = (event) => {
      event.preventDefault();
      this.setState({
-       page: "1",
-       limit: event.target.value
+       page: 1,
+       limit: Number(event.target.value),
+       maxPages: Math.ceil(this.state.count/Number(event.target.value))
      });
      return this.fetchItems();
    }
@@ -113,13 +117,24 @@ export default class Trending extends Component {
    //  NOTE: limited the number of page buttons rendering for aesthetic reasons
    // NOTE: the REAL ETSY renders 8 pages total, always... changing the scope/ range of pg numbers that are viewable/availbe as you navigate through.... I have not found out how to do this just yet. this just limits the # of buttons available. we can change this.
     for (let n = 1; n <= numPages && n <= 8; n++) {
-      pageButtons.push(<button className="linkButton" key={n} onClick={this.updatePage} value={n}>{n}</button>)
+      if ( n === this.state.page) {
+        pageButtons.push(<button className="linkButton activePage" key={n} onClick={this.updatePage} value={n}>{n}</button>)
+      } else {
+        pageButtons.push(<button className="linkButton" key={n} onClick={this.updatePage} value={n}>{n}</button>)
+      }
     }
-     return (
-       <div className="pages">
-         {pageButtons}<div className="fillerEllipse"> ... </div>
-       </div>
-     )
+    if (numPages > 8) {
+       return (
+         <div className="pages">
+           {pageButtons}<div className="fillerEllipse"> ... </div>
+         </div>
+       )
+    }
+    return (
+      <div className="pages">
+        {pageButtons}
+      </div>
+    )
    }
 
    limitComponent = () => {
@@ -148,7 +163,7 @@ export default class Trending extends Component {
          <div className="pageSelector">
            {this.pagesComponent()}
            {this.pageNavArrows()}
-            {this.limitComponent()}
+           {this.limitComponent()}
          </div>
          <Footer />
       </div>
