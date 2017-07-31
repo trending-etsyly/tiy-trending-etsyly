@@ -1,0 +1,82 @@
+
+.ItemCard a {
+  text-decoration: none;
+}
+
+.ItemCard {
+  width: 229.5px;
+  height: 229.25px;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-bottom: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: .5px solid #DFDEDE;
+  border-radius: 3px;
+}
+
+.cardImage {
+  width: 228.5px;
+  height: 182.25px;
+  background-size: cover;
+  background-position: center;
+  border-right: .5px solid #DFDEDE;
+  border-radius: 3px;
+}
+
+.titlePriceRow {
+  width: 228.5px;
+  height: 43px;
+  overflow: hidden;
+}
+
+.ItemCard :hover > .titlePriceRow {
+  box-shadow: 0px 0px 1px 0px #C4C3C3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ItemCard :hover > .cardImage {
+  border-right: .5px solid #C4C3C3;
+  cursor: pointer;
+}
+
+.cardTitle {
+  width: 217.5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 14px;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 7px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.cardSellerPrice {
+  width: 217.5px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.seller {
+  float: left;
+  font-size: 12px;
+  color: #777;
+  text-decoration: none;
+}
+
+.price {
+  float: right;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+}
