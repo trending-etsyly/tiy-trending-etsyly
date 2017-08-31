@@ -28,8 +28,10 @@ export default class Trending extends Component {
    }
 
    fetchItems = () => {
-     fetch(`https://openapi.etsy.com/v2/listings/trending?includes=MainImage(url_570xN),User(login_name),Shop(shop_name)&fields=listing_id,user_id,title,price,url&limit=${this.state.limit}&page=${this.state.page}&api_key=${apiKey}`)
+     var proxyUrl = 'https://cors-anywhere.herokuapp.com/'
+     fetch(proxyUrl+`https://openapi.etsy.com/v2/listings/trending?includes=MainImage(url_570xN),User(login_name),Shop(shop_name)&fields=listing_id,user_id,title,price,url&limit=${this.state.limit}&page=${this.state.page}&api_key=${apiKey}`)
      .then(results => {
+           console.log('results', results)
            return results.json();
          })
      .then(data => {
